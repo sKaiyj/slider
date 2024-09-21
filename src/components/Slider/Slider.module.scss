@@ -1,0 +1,49 @@
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  .buttons {
+    display: flex;
+    gap: 20px;
+
+    button {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+}
+.slider {
+  width: min(600px, 90%);
+  height: 300px;
+  overflow: hidden;
+}
+.slide {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.items {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
